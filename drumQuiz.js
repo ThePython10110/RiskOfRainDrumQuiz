@@ -22,9 +22,11 @@ function startTrack() {
     drumPlayer.src = currentTrack.drums;
     fullPlayer.src = currentTrack.full;
     fadeTarget = 0;
+    fade = 0;
     drumPlayer.hidden = false;
     fullPlayer.hidden = true;
     checkButton.hidden = false;
+    checkButton.disabled = false;
     switchButton.hidden = true;
     answerText.classList.add("hidden")
 }
@@ -35,7 +37,7 @@ function checkAnswer() {
     switchTracks();
     checkButton.hidden = true;
     switchButton.hidden = false;
-    answerText.innerHTML = currentTrack.title
+    answerText.innerHTML = currentTrack.title;
     answerText.classList.remove("hidden")
 }
 
@@ -43,12 +45,14 @@ function switchTracks() {
     if (fadeTarget == 0) {
         fadeTarget = 100;
         fullPlayer.currentTime = drumPlayer.currentTime;
+        fullPlayer.playbackRate = drumPlayer.playbackRate;
         drumPlayer.hidden = true;
         fullPlayer.hidden = false;
         fullPlayer.play();
     } else {
         fadeTarget = 0;
         drumPlayer.currentTime = fullPlayer.currentTime;
+        drumPlayer.playbackRate = fullPlayer.playbackRate;
         drumPlayer.hidden = false;
         fullPlayer.hidden = true;
         drumPlayer.play();

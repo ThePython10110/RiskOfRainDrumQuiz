@@ -7,9 +7,9 @@
     <body>
         <div id="container">
             <h1 id="heading"><i>...and his music was percussive</i></h1>
-            <button id="startButton">Play</button>
-            <button id="checkButton">Check</button>
-            <button id="switchButton" hidden>Switch</button>
+            <button id="startButton">Next</button>
+            <button id="checkButton" disabled>Reveal answer</button>
+            <button id="switchButton" hidden>Switch tracks</button>
             <br/>
             <br/>
             <audio controls autoplay id="drumPlayer" volume=1></audio>
@@ -25,6 +25,8 @@
                     <li>You're not supposed to be able to see the duration of the track before checking, but there's no easy way to hide it on Firefox-based browsers.</li>
                     <li>When switching between the drum/full tracks, it isn't perfectly synchronized, because that would be a huge amount of work.</li>
                     <li>This doesn't look particularly nice because I'm lazy, and it apparently looks even worse if the Dark Reader extension is active.</li>
+                    <li>You can definitely get repeated tracks, and (unless I just got unlucky) some might be more common than they should be.</li>
+                    <li>The source code can be found <a href=https://github.com/ThePython10110/RiskOfRainDrumQuiz>here</a>.</li>
                 </ul>
             </div>
         </div>
