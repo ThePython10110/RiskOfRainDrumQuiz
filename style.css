@@ -5,12 +5,32 @@
 
 body {
     background-image:
-        radial-gradient(circle, rgba(0,0,0,0) 40%, rgba(0,0,0,0.3)),
+        radial-gradient(circle, rgba(0,0,0,0) 40%, rgba(0,0,0,0.5)),
         url("bg.jpeg");
     background-size: cover
 }
 
-#heading, #answerText {
+#heading {
     color: #dddddd;
     font-family: sans-serif
+}
+
+#noteDiv {
+    background-color: #333333;
+    width: 30em;
+    color: #dddddd;
+    font-family: sans-serif;
+    padding: 10px
+}
+
+a {
+    color: cyan;
+}
+
+li {
+    padding: 3px;
+}
+
+.hidden {
+    visibility: hidden
 }

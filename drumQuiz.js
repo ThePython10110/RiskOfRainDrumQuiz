@@ -1,3 +1,6 @@
+import {trackData} from "./trackData.js"
+// in case you misunderstand, this is *data* about *tracks*, not a script that *tracks data*
+
 const drumPlayer = document.getElementById("drumPlayer");
 const fullPlayer = document.getElementById("fullPlayer");
 const startButton = document.getElementById("startButton");
@@ -23,16 +26,17 @@ function startTrack() {
     fullPlayer.hidden = true;
     checkButton.hidden = false;
     switchButton.hidden = true;
-    answerText.innerHTML = ""
+    answerText.classList.add("hidden")
 }
 
 function checkAnswer() {
     if (!currentTrack || !fullPlayer.hidden) {return;}
     fadeTarget = 0; // hacky spaghetti code but I don't care; this probably isn't necessary anyway
     switchTracks();
-    answerText.innerHTML = currentTrack.title
     checkButton.hidden = true;
     switchButton.hidden = false;
+    answerText.innerHTML = currentTrack.title
+    answerText.classList.remove("hidden")
 }
 
 function switchTracks() {

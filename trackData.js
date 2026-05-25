@@ -1,4 +1,4 @@
-const trackData = [
+export const trackData = [
     {
         "title": "[RoRR] Risk of Rain",
         "drums": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-returns-engineer-edition-returns-2015/krehkiwzlb/01.%20Risk%20of%20Rain%20Drums%20120.mp3",
@@ -247,8 +247,8 @@ const trackData = [
         "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/racuqyrgwz/048.%20Drums%20I.mp3",
         "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/cngtzsqb/03.%20%E5%B1%8B%E6%A0%B9%E3%81%AE%E6%BC%8F%E3%82%8A%20%28Yane%20No%20Mori%29.mp3"
     },
-    { // for some reason there's organ in the drum track
-        "title": "[SotS] Tlālōcān",
+    {
+        "title": "[SotS] Tlālōcān (apparently there's just organ in the drum track for some reason)",
         "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/qmiowwtuvk/060.%20Drums%20I.mp3",
         "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/kwbrdsdn/04.%20Tl%C4%81l%C5%8Dc%C4%81n.mp3"
     },
