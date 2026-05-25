@@ -1,0 +1,62 @@
+const drumPlayer = document.getElementById("drumPlayer");
+const fullPlayer = document.getElementById("fullPlayer");
+const startButton = document.getElementById("startButton");
+const checkButton = document.getElementById("checkButton");
+const switchButton = document.getElementById("switchButton");
+const answerText = document.getElementById("answerText")
+const fadeAmount = 1;
+const volMax = 0.7;
+var fadeTarget = 0;
+var fade = 0;
+var currentTrack;
+
+startButton.addEventListener("click", startTrack);
+checkButton.addEventListener("click", checkAnswer);
+switchButton.addEventListener("click", switchTracks);
+
+function startTrack() {
+    currentTrack = trackData[Math.floor(Math.random() * trackData.length)];
+    drumPlayer.src = currentTrack.drums;
+    fullPlayer.src = currentTrack.full;
+    fadeTarget = 0;
+    drumPlayer.hidden = false;
+    fullPlayer.hidden = true;
+    checkButton.hidden = false;
+    switchButton.hidden = true;
+    answerText.innerHTML = ""
+}
+
+function checkAnswer() {
+    if (!currentTrack || !fullPlayer.hidden) {return;}
+    fadeTarget = 0; // hacky spaghetti code but I don't care; this probably isn't necessary anyway
+    switchTracks();
+    answerText.innerHTML = currentTrack.title
+    checkButton.hidden = true;
+    switchButton.hidden = false;
+}
+
+function switchTracks() {
+    if (fadeTarget == 0) {
+        fadeTarget = 100;
+        fullPlayer.currentTime = drumPlayer.currentTime;
+        drumPlayer.hidden = true;
+        fullPlayer.hidden = false;
+        fullPlayer.play();
+    } else {
+        fadeTarget = 0;
+        drumPlayer.currentTime = fullPlayer.currentTime;
+        drumPlayer.hidden = false;
+        fullPlayer.hidden = true;
+        drumPlayer.play();
+    }
+}
+
+setInterval(function() {
+    if (fade < fadeTarget) {
+        fade += fadeAmount;
+    } else if (fade > fadeTarget) {
+        fade -= fadeAmount;
+    }
+    drumPlayer.volume = volMax-volMax*(fade/100);
+    fullPlayer.volume = volMax*(fade/100);
+})
