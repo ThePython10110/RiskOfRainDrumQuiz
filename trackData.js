@@ -250,7 +250,7 @@ export const trackData = [
     {
         "group": "SotV",
         "title": "They Might As Well Be Dead",
-        "drums": "https://downloads.khinsider.com/game-soundtracks/album/risk-of-rain-2-survivors-of-the-void-deep-dive-2022/59.%2520Drums%2520I.mp3",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-deep-dive-2022/pskqjqpaol/59.%20Drums%20I.mp3",
         "full": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-2022/jvbuvujn/07.%20They%20Might%20As%20Well%20Be%20Dead.mp3",
     },
     {
