@@ -7,18 +7,18 @@ const startButton = document.getElementById("startButton");
 const checkButton = document.getElementById("checkButton");
 const switchButton = document.getElementById("switchButton");
 const answerText = document.getElementById("answerText")
+const filterForm = document.getElementById("filterForm")
 const fadeAmount = 1;
 const volMax = 0.7;
 var fadeTarget = 0;
 var fade = 0;
 var currentTrack;
-
-startButton.addEventListener("click", startTrack);
-checkButton.addEventListener("click", checkAnswer);
-switchButton.addEventListener("click", switchTracks);
+var filteredTracks = []
+var groups = []
 
 function startTrack() {
-    currentTrack = trackData[Math.floor(Math.random() * trackData.length)];
+    if (filteredTracks.length == 0) {return;}
+    currentTrack = filteredTracks[Math.floor(Math.random() * filteredTracks.length)];
     drumPlayer.src = currentTrack.drums;
     fullPlayer.src = currentTrack.full;
     fadeTarget = 0;
@@ -37,7 +37,7 @@ function checkAnswer() {
     switchTracks();
     checkButton.hidden = true;
     switchButton.hidden = false;
-    answerText.innerHTML = currentTrack.title;
+    answerText.innerHTML = `[${currentTrack.group}] ${currentTrack.title}`;
     answerText.classList.remove("hidden")
 }
 
@@ -59,6 +59,52 @@ function switchTracks() {
     }
 }
 
+function filterTracks() {
+    var filteredGroups = []
+    for (const group of groups) {
+        if (document.getElementById(`checkbox-${group}`).checked == true) {
+            filteredGroups.push(group);
+        }
+    }
+    if (filteredGroups.length == 0) {
+        startButton.disabled = true;
+        return;
+    } else {
+        startButton.disabled = false;
+    }
+    filteredTracks = []
+    for (const track of trackData) {
+        if (filteredGroups.includes(track.group)) {
+            filteredTracks.push(track);
+        }
+    }
+}
+
+for (const track of trackData) {
+    if (!groups.includes(track.group)) {
+        groups.push(track.group);
+    }
+}
+
+for (const group of groups) {
+    var checkbox = document.createElement("input");
+    checkbox.type = "checkbox"
+    checkbox.name = group;
+    checkbox.id = `checkbox-${group}`
+    checkbox.checked = true;
+    checkbox.addEventListener("change", filterTracks);
+    var label = document.createElement("label");
+    label.for = group;
+    label.innerHTML = group;
+    filterForm.appendChild(checkbox)
+    filterForm.appendChild(label)
+    filterForm.appendChild(document.createElement("br"))
+}
+
+startButton.addEventListener("click", startTrack);
+checkButton.addEventListener("click", checkAnswer);
+switchButton.addEventListener("click", switchTracks);
+
 setInterval(function() {
     if (fade < fadeTarget) {
         fade += fadeAmount;
@@ -68,3 +114,5 @@ setInterval(function() {
     drumPlayer.volume = volMax-volMax*(fade/100);
     fullPlayer.volume = volMax*(fade/100);
 })
+
+filterTracks();
