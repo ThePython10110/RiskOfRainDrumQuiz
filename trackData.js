@@ -179,5 +179,92 @@ const trackData = [
         "title": "[RoR2] Through a Cloud, Darkly",
         "drums": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-engineer-edition-2/xdyjzstn/192.%20ROR2.26%20-%20%CE%A302%20Drums%20II%20%26%20Perc.mp3",
         "full": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-soundtrack/irmyonewji/01.%20Through%20a%20Cloud%2C%20Darkly.mp3"
+    },
+
+    {
+        "title": "[SotV] Out of Whose Womb Came the Ice",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-deep-dive-2022/djtbpadqhv/07.%20Drums%20I.mp3",
+        "full": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-2022/tjptcepk/04.%20Out%20of%20Whose%20Womb%20Came%20the%20Ice.mp3"
+    },
+    {
+        "title": "[SotV] Having Fallen, It Was Blood",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-deep-dive-2022/nhfbiyjyya/20.%20Drums%20I.mp3",
+        "full": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-2022/xjerveid/03.%20Having%20Fallen%2C%20It%20Was%20Blood.mp3"
+    },
+    {
+        "title": "[SotV] A Placid Island of Ignorance",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-deep-dive-2022/hgvkdpwazz/31.%20Drums%20I.mp3",
+        "full": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-2022/nzhmohub/02.%20A%20Placid%20Island%20of%20Ignorance.mp3"
+    },
+    {
+        "title": "[SotV] Once in a Lullaby",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-deep-dive-2022/mhyxzfgctu/39.%20Drums%20I.mp3",
+        "full": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-2022/hdxctlzo/05.%20Once%20in%20a%20Lullaby.mp3"
+    },
+    {
+        "title": "[SotV] A Boat Made from a Sheet of Newspaper",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-deep-dive-2022/ahcpvjczon/51.%20Drums%20I.mp3",
+        "full": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-2022/uiinsbci/06.%20A%20Boat%20Made%20from%20a%20Sheet%20of%20Newspaper.mp3"
+    },
+    {
+        "title": "[SotV] They Might As Well Be Dead",
+        "drums": "https://downloads.khinsider.com/game-soundtracks/album/risk-of-rain-2-survivors-of-the-void-deep-dive-2022/59.%2520Drums%2520I.mp3",
+        "full": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-2022/jvbuvujn/07.%20They%20Might%20As%20Well%20Be%20Dead.mp3",
+    },
+    {
+        "title": "[SotV] The Face of the Deep",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-deep-dive-2022/lwdakpdfyg/69.%20Drums%20I.mp3",
+        "full": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-2022/nbqdrxoc/08.%20The%20Face%20of%20the%20Deep.mp3"
+    },
+    {
+        "title": "[SotV] Who Can Fathom the Soundless Depths",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-deep-dive-2022/bmsxnjuuon/80.%20Drums%20I.mp3",
+        "full": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-survivors-of-the-void-2022/uqtwcyiu/09.%20Who%20Can%20Fathom%20the%20Soundless%20Depths.mp3"
+    },
+
+    {
+        "title": "[SotS] Oṃ Maṇi Padme Hūṃ, part III",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/bnxvtyfipi/001.%20Drums%20I.mp3",
+        "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/oqowrtre/08.%20O%E1%B9%83%20Ma%E1%B9%87i%20Padme%20H%C5%AB%E1%B9%83%2C%20part%20III.mp3"
+    },
+    {
+        "title": "[SotS] Oṃ Maṇi Padme Hūṃ, part II",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/rqbikbfxgn/013.%20Drums%20I.mp3",
+        "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/dguelupq/05.%20O%E1%B9%83%20Ma%E1%B9%87i%20Padme%20H%C5%AB%E1%B9%83%2C%20part%20II.mp3"
+    },
+    {
+        "title": "[SotS] Oṃ Maṇi Padme Hūṃ, part I",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/wlvqxforhv/025.%20Drums%20I.mp3",
+        "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/xctmgstr/02.%20O%E1%B9%83%20Ma%E1%B9%87i%20Padme%20H%C5%AB%E1%B9%83%2C%20part%20I.mp3"
+    },
+    {
+        "title": "[SotS] Forgot the Cry of Gulls",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/lsxeqnrtwb/037.%20Drums%20I.mp3",
+        "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/kcjosxlj/07.%20Forgot%20the%20Cry%20of%20Gulls.mp3"
+    },
+    {
+        "title": "[SotS] 屋根の漏り (Yane No Mori)",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/racuqyrgwz/048.%20Drums%20I.mp3",
+        "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/cngtzsqb/03.%20%E5%B1%8B%E6%A0%B9%E3%81%AE%E6%BC%8F%E3%82%8A%20%28Yane%20No%20Mori%29.mp3"
+    },
+    { // for some reason there's organ in the drum track
+        "title": "[SotS] Tlālōcān",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/qmiowwtuvk/060.%20Drums%20I.mp3",
+        "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/kwbrdsdn/04.%20Tl%C4%81l%C5%8Dc%C4%81n.mp3"
+    },
+    {
+        "title": "[SotS] It Can't Rain All the Time",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/aidhcuuzqe/072.%20Drums%20I.mp3",
+        "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/ryqjaxoc/10.%20It%20Can%27t%20Rain%20All%20the%20Time.mp3",
+    },
+    {
+        "title": "[SotS] A Tempestuous Noise of Thunder and Lightning Heard",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/odnrgvvghq/082.%20Drums%20I.mp3",
+        "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/kimiggpd/01.%20A%20Tempestuous%20Noise%20of%20Thunder%20and%20Lightning%20Heard.mp3"
+    },
+    {
+        "title": "[SotS] I Should Build the Man a Status",
+        "drums": "https://jetta.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-recipe-book-2024/icszwyprwm/095.%20Drums%20I.mp3",
+        "full": "https://nu.vgmtreasurechest.com/soundtracks/risk-of-rain-2-seekers-of-the-storm-2024/kazxlnfp/06.%20I%20Should%20Build%20the%20Man%20a%20Statue.mp3"
     }
 ];
