@@ -1,0 +1,16 @@
+#drumPlayer::-webkit-media-controls-current-time-display,
+#drumPlayer::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+body {
+    background-image:
+        radial-gradient(circle, rgba(0,0,0,0) 40%, rgba(0,0,0,0.3)),
+        url("bg.jpeg");
+    background-size: cover
+}
+
+#heading, #answerText {
+    color: #dddddd;
+    font-family: sans-serif
+}

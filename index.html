@@ -2,21 +2,20 @@
 <html>
     <head>
         <title>Risk of Rain Drum Quiz</title>
-        <style>
-            #drumPlayer::-webkit-media-controls-current-time-display,
-            #drumPlayer::-webkit-media-controls-time-remaining-display {
-                display: none;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Guess stuff or whatever</h1>
-        <button id="startButton">Start</button>
-        <button id="checkButton">Check</button>
-        <button id="switchButton" hidden>Switch</button>
-        <audio controls autoplay id="drumPlayer" volume=1></audio>
-        <audio controls autoplay hidden id="fullPlayer" volume=0></audio>
-        <p id="answerText"></p>
+        <div id="container">
+            <h1 id="heading">...and his music was percussive</h1>
+            <button id="startButton">Start</button>
+            <button id="checkButton">Check</button>
+            <button id="switchButton" hidden>Switch</button>
+            <br/>
+            <br/>
+            <audio controls autoplay id="drumPlayer" volume=1></audio>
+            <audio controls autoplay hidden id="fullPlayer" volume=0></audio>
+            <p id="answerText"></p>
+        </div>
 
         <script src="trackData.js"></script>
         <script src="drumQuiz.js"></script>
