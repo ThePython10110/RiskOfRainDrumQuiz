@@ -16,20 +16,30 @@
             <audio controls autoplay hidden id="fullPlayer" volume=0></audio>
             <br/>
             <br/>
-            <div id="noteDiv">
+            <div id="containerDiv">
                 <i id="answerText" class="hidden">text text text</i>
                 <hr/>
                 <h4> Filter tracks:</h4>
-                <form id="filterForm"></form>
-                <h4>Notes:</h4>
-                <ul>
-                    <li>All audio files are loaded from <a href=https://downloads.khinsider.com>KHInsider.com</a>, so if they don't load, it's not my fault.</li>
-                    <li>You're not supposed to be able to see the duration of the track before checking, but there's no easy way to hide it on Firefox-based browsers.</li>
-                    <li>When switching between the drum/full tracks, it isn't perfectly synchronized, because that would be a huge amount of work.</li>
-                    <li>This doesn't look particularly nice because I'm lazy, and it apparently looks even worse if the Dark Reader extension is active.</li>
-                    <li>You can definitely get repeated tracks, and (unless I just got unlucky) some might be more common than they should be.</li>
-                    <li>The source code can be found <a href=https://github.com/ThePython10110/RiskOfRainDrumQuiz>here</a>.</li>
-                </ul>
+                <div>
+                    <form id="filterForm"></form>
+                    <div id="scoreDiv">
+                        <p>Correct:</p>
+                        <h3 id="scoreDisplay">0/0</h3>
+                        <button id="correctButton" disabled>Mark correct</button>
+                    </div>
+                </div>
+                <br/>
+                <div>
+                    <h4>Notes:</h4>
+                    <ul>
+                        <li>All audio files are loaded from <a href=https://downloads.khinsider.com>KHInsider.com</a>, so if they don't load, it's not my fault.</li>
+                        <li>You're not supposed to be able to see the duration of the track before checking, but there's no easy way to hide it on Firefox-based browsers.</li>
+                        <li>When switching between the drum/full tracks, it isn't perfectly synchronized, because that would be a huge amount of work.</li>
+                        <li>This doesn't look particularly nice because I'm lazy, and it apparently looks even worse if the Dark Reader extension is active.</li>
+                        <li>You can definitely get repeated tracks, and (unless I just got unlucky) some might be more common than they should be.</li>
+                        <li>The source code can be found <a href=https://github.com/ThePython10110/RiskOfRainDrumQuiz>here</a>.</li>
+                    </ul>
+                </div>
             </div>
         </div>
 

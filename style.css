@@ -15,7 +15,7 @@ body {
     font-family: sans-serif
 }
 
-#noteDiv {
+#containerDiv {
     background-color: #333333;
     width: 30em;
     color: #dddddd;
@@ -33,4 +33,12 @@ li {
 
 .hidden {
     visibility: hidden
+}
+
+#filterForm {
+    float: left;
+}
+
+#scoreDiv {
+    padding-left: 10em
 }

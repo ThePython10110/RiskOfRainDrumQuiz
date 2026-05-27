@@ -6,10 +6,15 @@ const fullPlayer = document.getElementById("fullPlayer");
 const startButton = document.getElementById("startButton");
 const checkButton = document.getElementById("checkButton");
 const switchButton = document.getElementById("switchButton");
-const answerText = document.getElementById("answerText")
-const filterForm = document.getElementById("filterForm")
+const answerText = document.getElementById("answerText");
+const filterForm = document.getElementById("filterForm");
+const correctButton = document.getElementById("correctButton");
+const scoreDisplay = document.getElementById("scoreDisplay");
 const fadeAmount = 1;
 const volMax = 0.7;
+var totalTracks = 0;
+var score = 0;
+var correct = false;
 var fadeTarget = 0;
 var fade = 0;
 var currentTrack;
@@ -23,6 +28,11 @@ function startTrack() {
     fullPlayer.src = currentTrack.full;
     fadeTarget = 0;
     fade = 0;
+    correct = false;
+    totalTracks++;
+    updateScore();
+    correctButton.disabled = true;
+    correctButton.innerHTML = "Mark correct";
     drumPlayer.hidden = false;
     fullPlayer.hidden = true;
     checkButton.hidden = false;
@@ -39,6 +49,7 @@ function checkAnswer() {
     switchButton.hidden = false;
     answerText.innerHTML = `[${currentTrack.group}] ${currentTrack.title}`;
     answerText.classList.remove("hidden")
+    correctButton.disabled = false;
 }
 
 function switchTracks() {
@@ -80,6 +91,17 @@ function filterTracks() {
     }
 }
 
+function correctPress() {
+    correct = !correct;
+    score += (correct ? 1 : -1)
+    correctButton.innerHTML = correct ? "Mark incorrect" : "Mark correct";
+    updateScore();
+}
+
+function updateScore() {
+    scoreDisplay.innerHTML = `${score}/${totalTracks}`
+}
+
 for (const track of trackData) {
     if (!groups.includes(track.group)) {
         groups.push(track.group);
@@ -104,6 +126,7 @@ for (const group of groups) {
 startButton.addEventListener("click", startTrack);
 checkButton.addEventListener("click", checkAnswer);
 switchButton.addEventListener("click", switchTracks);
+correctButton.addEventListener("click", correctPress);
 
 setInterval(function() {
     if (fade < fadeTarget) {
